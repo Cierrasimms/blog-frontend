@@ -2,8 +2,6 @@
   <nav>
     <router-link to="/">Home</router-link>
     |
-    <router-link to="/about">About</router-link>
-    |
     <router-link to="/signup">Signup</router-link>
     |
     <router-link to="/login">Login</router-link>
@@ -32,10 +30,10 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #4d18ed;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #17d9c2;
 }
 </style>

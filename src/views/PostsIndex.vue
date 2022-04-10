@@ -37,11 +37,11 @@ export default {
 
 <style>
 h1 {
-  color: purple;
+  color: rgb(0, 0, 0);
   font-family: Georgia;
 }
 h2 {
-  color: plum;
+  color: rgb(0, 0, 0);
   font-family: Arial, Helvetica, sans-serif;
 }
 </style>

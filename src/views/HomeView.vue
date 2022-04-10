@@ -8,7 +8,7 @@
 export default {
   data: function () {
     return {
-      message: "Sup!",
+      message: "Go away",
     };
   },
   created: function () {},
