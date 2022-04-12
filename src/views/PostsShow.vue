@@ -53,7 +53,4 @@ h2 {
 p {
   color: rgb(91, 18, 180);
 }
-div {
-  background-color: rgb(253, 184, 214);
-}
 </style>

@@ -17,7 +17,7 @@ import axios from "axios";
 export default {
   data: function () {
     return {
-      message: "My Cool Blog",
+      message: "The Best Corgi Blog",
       posts: [],
     };
   },
@@ -35,13 +35,4 @@ export default {
 };
 </script>
 
-<style>
-h1 {
-  color: rgb(0, 0, 0);
-  font-family: Georgia;
-}
-h2 {
-  color: rgb(0, 0, 0);
-  font-family: Arial, Helvetica, sans-serif;
-}
-</style>
+<style></style>
