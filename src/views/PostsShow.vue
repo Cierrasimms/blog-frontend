@@ -6,6 +6,8 @@
     <img v-bind:src="post.image" v-bind:alt="post.title" style="max-width: 250px" />
     <div></div>
     <router-link to="/posts">Back to all posts</router-link>
+    <br />
+    <router-link v-bind:to="`/posts/${post.id}/edit`">Edit Post</router-link>
   </div>
 </template>
 
