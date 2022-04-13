@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-light" style="background-color: pink">
+  <nav class="navbar navbar-light" style="background-color: #8080ff">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
       <button
@@ -24,13 +24,13 @@
           <li class="nav-item">
             <a class="nav-link" href="/posts/new">New Post</a>
           </li>
-          <li class="nav-item">
+          <li v-if="!isLoggedIn" key="" class="nav-item">
             <a class="nav-link" href="/signup">Sign Up</a>
           </li>
-          <li class="nav-item">
+          <li v-if="!isLoggedIn" class="nav-item">
             <a class="nav-link" href="/login">Login</a>
           </li>
-          <li class="nav-item">
+          <li v-if="isLoggedIn" class="nav-item">
             <a class="nav-link" href="/logout">Logout</a>
           </li>
         </ul>
@@ -40,6 +40,21 @@
 
   <router-view />
 </template>
+
+<script>
+export default {
+  data: function () {
+    return {
+      isLoggedIn: false,
+    };
+  },
+  watch: {
+    $route: function () {
+      this.isLoggedIn = !!localStorage.jwt;
+    },
+  },
+};
+</script>
 
 <style>
 h1 {
@@ -83,6 +98,6 @@ pre {
   line-height: 18.5714px;
 }
 body {
-  background-image: url("https://previews.123rf.com/images/stolenpencil/stolenpencil1611/stolenpencil161100018/68352915-modelo-incons%C3%BAtil-del-corgi-lindo-en-el-fondo-de-color-rosa.jpg");
+  background-image: url("https://media.istockphoto.com/vectors/cute-corgi-butt-welsh-corgi-dog-looking-back-seamless-pattern-vector-vector-id1231299531?k=20&m=1231299531&s=612x612&w=0&h=6nPTs-0CkOo36dQkRGsZIBDmq05qAFGWIhrT7Wd3i78=");
 }
 </style>
